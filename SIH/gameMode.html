@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mode - Treasure Hunt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Roam Riddle</h2>
+        <a href="index.html">Home</a>
+        <a href="tours.html">Tours and Bookings</a>
+        <a href="gameMode.html">Interactive Mode</a>
+        <a href="treasureHunt.html">Treasure Hunt</a>
+        <a href="rewards.html">Rewards</a>
+        <a href="ingamepurchase.html">Premium Content</a>
+        <a href="about.html">About Us</a>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <!-- Main heading -->
+        <div class="main-heading-game">
+            <h1>Join the Treasure Hunt Game Mode!</h1>
+            <p>Connect with other adventurers and form a team to embark on an exciting treasure hunt.</p>
+        </div>
+
+        <!-- Game Mode Content -->
+        <div class="game-mode-container">
+            <h2>Available Teams</h2>
+            <ul class="team-list">
+                <li>Team Alpha - 3/5 Players</li>
+                <li>Team Explorer - 4/5 Players</li>
+                <li>Team Phoenix - 2/5 Players</li>
+                <li>Team Voyager - 1/5 Players</li>
+            </ul>
+
+            <!-- Form to Join or Create Team -->
+            <div class="team-form">
+                <h2>Join or Create a Team</h2>
+                <form action="team.html" method="post">
+                    <label for="team-name">Enter Team Name:</label>
+                    <input type="text" id="team-name" name="team-name" placeholder="Your team name" required>
+
+                    <label for="team-size">Select Team Size:</label>
+                    <select id="team-size" name="team-size">
+                        <option value="2">2 Players</option>
+                        <option value="3">3 Players</option>
+                        <option value="4">4 Players</option>
+                        <option value="5">5 Players</option>
+                    </select>
+
+                    <button type="submit">Create/Join Team</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

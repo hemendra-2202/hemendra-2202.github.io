@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt - Start Your Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Roam Riddle</h2>
+        <a href="index.html">Home</a>
+        <a href="tours.html">Tours and Bookings</a>
+        <a href="gameMode.html">Interactive Mode</a>
+        <a href="treasureHunt.html">Treasure Hunt</a>
+        <a href="rewards.html">Rewards</a>
+        <a href="ingamepurchase.html">Premium Content</a>
+        <a href="about.html">About Us</a>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <!-- Main heading -->
+        <div class="main-heading-treasurehunt">
+            <h1>The Great Treasure Hunt Begins!</h1>
+            <p>Follow the clues, solve the riddles, and find the hidden treasure.</p>
+        </div>
+
+        <!-- Treasure Hunt Content -->
+        <div class="treasure-hunt-container">
+            <h2>Current Clue</h2>
+            <p class="clue-text">"In this place, art comes alive. Seek the mural where creativity thrives.?"</p>
+
+            <!-- Answer form -->
+            <div class="clue-answer-form">
+                <form action="nextClue.html" method="post">
+                    <label for="answer">Enter Your Answer:</label>
+                    <input type="text" id="answer" name="answer" placeholder="Type your answer here..." required>
+                    <button type="submit">Submit Answer</button>
+                </form>
+            </div>
+
+            <!-- Progress tracking -->
+            <div class="progress-container">
+                <h2>Your Progress</h2>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 25%;"></div>
+                </div>
+                <p>Clue 1 of 5 Solved</p>
+            </div>
+
+            <!-- Interactive Map -->
+            <div class="map-container">
+                <h2>Interactive Treasure Map</h2>
+                <p>Use this map to guide your team through the treasure hunt.</p>
+                <img src="images\treasuremap.jpeg" alt="Treasure Hunt Map" class="map-image">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
